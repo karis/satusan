@@ -6,12 +6,9 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
   modules: [
-    // '@sidebase/nuxt-auth',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/tailwindcss',
-    '@vee-validate/nuxt',
-    'nuxt-icon',
-    '@nuxtjs/i18n',
+  '@nuxtjs/color-mode', 
+  '@vee-validate/nuxt', 'nuxt-icon', '@nuxtjs/i18n', '@nuxtjs/tailwindcss'
+  // '@sidebase/nuxt-auth',// '@nuxtjs/tailwindcss',
   ],
   veeValidate: {
     autoImports: true,
