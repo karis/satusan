@@ -5,6 +5,7 @@
     const register= ref({
         name: '',
         email: '',
+        phone: '',
         password: '',
         password_confirmation: ''
     })
@@ -14,11 +15,11 @@
 </script>
 
 <template>
-     <div class="grid grid-cols-1 w-full bg-zinc-500">
+     <div class="grid grid-cols-1 w-full bg-zinc-100 h-screen">
             <div class="grid w-full md:w-2/3 bg-white rounded-lg p-4 m-auto">
-            <h1>Register</h1>
-            <p>
-                 Complete the form below to register for an account.
+            <h1 class="text-3xl font-semibold">Register</h1>
+            <p class="text-zinc-500">
+                 Complete the form below to register for business account.
             </p>
                 <form @submit.prevent="submit">
                     <div class="mb-4">
@@ -26,6 +27,12 @@
                             Name
                         </label>
                         <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" v-model="register.name" placeholder="Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">
+                            Phone
+                        </label>
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" v-model="register.phone" placeholder="Whatsapp Number">
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-gray-700 text-sm font-bold mb-2">
