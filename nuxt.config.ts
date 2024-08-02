@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
   modules: [
-    '@sidebase/nuxt-auth',
+    // '@sidebase/nuxt-auth',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@vee-validate/nuxt',
@@ -16,24 +16,17 @@ export default defineNuxtConfig({
   veeValidate: {
     autoImports: true,
   },
-  auth:{
-    isEnabled: true,
-    // addDefaultCallbackUrl: '/dashboard',
-    // baseURL: '/api/auth',
-    baseURL: 'http://localhost:3000/api/auth/',
-    provider: {
-      type: 'authjs',
-    },
-    // sessionRefresh: {
-    //   enableOnWindowFocus: true,
-    //   enablePeriodically: 1000,
-      // refreshHandler: RefreshHandler
-    // },
-    globalAppMiddleware:{
-      isEnabled: true,
-      allow404WithoutAuth: true,
-    }
-  },
+  // auth:{
+  //   isEnabled: true,
+  //   baseURL: 'http://localhost:3000/api/auth/',
+  //   provider: {
+  //     type: 'authjs',
+  //   },
+  //   globalAppMiddleware:{
+  //     isEnabled: true,
+  //     allow404WithoutAuth: true,
+  //   }
+  // },
 
   runtimeConfig: {
     // The private keys which are only available within server-side

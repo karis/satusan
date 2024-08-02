@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// import Toaster from './components/ui/toast/Toaster.vue';
 
 useSeoMeta({
   title: 'satusan',
@@ -9,6 +8,5 @@ useSeoMeta({
 <template>
   <NuxtLayout>
     <NuxtPage/>
-    <Toaster />
   </NuxtLayout>
 </template>
