@@ -9,7 +9,7 @@
             </h1>
         </a>
         <div>
-            <a href="/auth/login"  class="button p-2 bg-zinc-200 font-medium focus:text-zinc-50 focus:bg-zinc-950 rounded-lg">Login</a>
+            <SButton href="/auth/login"  class="button p-2 bg-zinc-200 font-medium focus:text-zinc-50  focus:bg-zinc-950 py-2 rounded-lg">Login</SButton>
         </div>
     </header>
     <div class="grid grid-cols-1 mx-auto pt-20 h-[97vh]">

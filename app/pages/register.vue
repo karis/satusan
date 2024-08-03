@@ -1,6 +1,6 @@
 <script setup lang="ts">
     definePageMeta({
-        layout: 'blank'
+        layout: 'default',
     })
     const register= ref({
         name: '',
@@ -23,34 +23,34 @@
             </p>
                 <form @submit.prevent="submit">
                     <div class="mb-4">
-                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">
+                        <label for="name" class="block text-zinc-700 text-sm font-bold mb-2">
                             Name
                         </label>
-                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" v-model="register.name" placeholder="Name">
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 leading-tight focus:outline-none focus:shadow-outline" id="name" v-model="register.name" placeholder="Name">
                     </div>
                     <div class="mb-4">
-                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">
+                        <label for="name" class="block text-zinc-700 text-sm font-bold mb-2">
                             Phone
                         </label>
-                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" v-model="register.phone" placeholder="Whatsapp Number">
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 leading-tight focus:outline-none focus:shadow-outline" id="name" v-model="register.phone" placeholder="Whatsapp Number">
                     </div>
                     <div class="mb-4">
-                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">
+                        <label for="email" class="block text-zinc-700 text-sm font-bold mb-2">
                         Email
                         </label>
-                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" v-model="register.email" placeholder="Email">
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 leading-tight focus:outline-none focus:shadow-outline" id="email" v-model="register.email" placeholder="Email">
                     </div>
                     <div class="mb-4">
-                        <label for="password" class="block text-gray-700 text-sm font-bold mb-2">
+                        <label for="password" class="block text-zinc-700 text-sm font-bold mb-2">
                         Password
                         </label>
-                        <input type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" v-model="register.password" placeholder="******************">
+                        <input type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" v-model="register.password" placeholder="******************">
                     </div>
                     <div class="mb-4">
-                        <label for="password_confirmation" class="block text-gray-700 text-sm font-bold mb-2">
+                        <label for="password_confirmation" class="block text-zinc-700 text-sm font-bold mb-2">
                             Confirm Password
                         </label>
-                        <input type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password_confirmation" v-model="register.password_confirmation" placeholder="******************">
+                        <input type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password_confirmation" v-model="register.password_confirmation" placeholder="******************">
                     </div>
                     <div class="flex items-center justify-between">
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
