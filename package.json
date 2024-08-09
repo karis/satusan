@@ -5,8 +5,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "npm run prepare:base && nuxt build",
+    "dev": "npm run prepare:base && nuxt dev",
+    "prepare:base": "nuxt prepare ui",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"

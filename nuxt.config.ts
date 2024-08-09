@@ -2,9 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: "2024-08-02",
-  future: {
-    compatibilityVersion: 4
-  },
+  future: { compatibilityVersion: 4 },
   modules: [
   '@vee-validate/nuxt', 'nuxt-icon', '@nuxtjs/i18n', '@nuxtjs/tailwindcss',
   // '@sidebase/nuxt-auth',
