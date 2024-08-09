@@ -1,11 +1,11 @@
 <template>
   <div class="grid gap-1">
-    <label v-if="props.label" :for="props.id || inputId" class="block text-sm font-medium text-zinc-700" >
+    <label v-if="props.label" :for="props.id || inputId" class="block text-sm font-medium text-emerald-700" >
       {{ props.label }}
     </label>
-    <div class="outline outline-2 outline-offset-1 focus:outline-zinc-950 rounded-md w-fit" :class="props.class">
+    <div class="outline outline-2 outline-offset-0 focus:outline-emerald-950 rounded-md w-fit" :class="props.class">
       <button
-        class="px-2 py-1 rounded-l hover:bg-zinc-300 focus:outline-none"
+        class="px-2 py-1 rounded-l hover:bg-emerald-100 focus:outline-none"
         @click="decrease"
       >
         -
@@ -20,7 +20,7 @@
         v-on="validationListeners"
         >
       <button
-        class="px-2 py-1 rounded-r hover:bg-zinc-300 focus:outline-none"
+        class="px-2 py-1 rounded-r hover:bg-emerald-100 focus:outline-none"
         @click="increase"
       >
         +

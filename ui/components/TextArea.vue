@@ -1,7 +1,7 @@
 <template>
   <div class="grid gap-1">
     <div>
-      <label v-if="props.label" :for="props.id || inputId" class="block text-sm font-medium text-zinc-700"
+      <label v-if="props.label" :for="props.id || inputId" class="block text-sm font-medium text-emerald-700"
        >{{ props.label }}</label>
       <textarea
         :id="inputId"
@@ -11,7 +11,7 @@
         :rows="props.rows"
         :cols="props.cols"
         :class="[
-          'w-full px-3 py-2 text-zinc-950 border rounded-lg focus:outline-none',
+          'w-full px-3 py-2 text-emerald-950 border rounded-lg focus:outline-none',
           { 'resize-none': autoResize }
         ]"
         :style="{ height: height + 'px' }"
